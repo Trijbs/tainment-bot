@@ -1081,6 +1081,9 @@ def setup(bot):
     bot.add_command(story_continue)
     bot.add_command(game)
 
+@commands.command()
+@commands.cooldown(1, 5, commands.BucketType.user)
+async def joke(ctx, category=None):
     
     # Start the daily joke refresh task
     @tasks.loop(hours=24)
