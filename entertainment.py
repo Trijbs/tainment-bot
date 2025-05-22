@@ -1080,7 +1080,7 @@ def setup(bot):
     bot.add_command(story_genres)
     bot.add_command(story_continue)
     bot.add_command(game)
-    bot.add_command(leaderboard)
+
     
     # Start the daily joke refresh task
     @tasks.loop(hours=24)
